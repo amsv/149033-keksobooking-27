@@ -59,7 +59,7 @@ const renderAvatar = (cardElement, avatar) => {
 
 const renderTitle = (cardElement, title) => {
   const popupTitle = cardElement.querySelector('.popup__title');
-  if (!(title && title.length)) {
+  if (!title) {
     return popupTitle.remove();
   }
   popupTitle.textContent = title;
